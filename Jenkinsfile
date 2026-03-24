@@ -13,7 +13,7 @@ pipeline {
                 sh 'npm install'
             }
         }
-
+        
         stage('Run Application') {
             steps {
                 sh 'nohup node src/app.js > output.log 2>&1 &'
